@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('accueil');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/inscription', function () {
+    return view('inscription');
+});
+
+
+//Routes RP
+
+
+//Routes Etudiant
+Route::get('/dashetu', function () {
+    return view('Etudiant/dashetu');
+});
+
+
+//Routes Encadrant
